@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://"></script>
+</head>
+<body>
+    <p id="myid">This is a first paragraph</p>
+    <p class="myclass">This is a first paragraph</p>
+    <h1>No data</h1>
+    
+
+    <script>
+        $(document).ready(function () {
+            $("#myid").css("background-color", "red");
+            $(".myclass").css("background-color", "green");
+            let txt = $("h1").text();
+            $("div").text(txt + "text inside div");
+            alert(txt);
+        });
+    </script>
+</body>
+</html>
